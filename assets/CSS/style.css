@@ -206,11 +206,6 @@ input{
 
 }
 
-/* .submitBtn:hover { background-color: rgb(4, 191, 191);}
-.restart:hover { background-color: rgb(2, 114, 2);}
-.score-btn:hover { background-color: rgb(2, 114, 2);}
-.start-btn:hover { background-color: rgb(4, 191, 191);}
-.abtn:hover { background-color: rgb(4, 191, 191);} */
 
 @media (hover: hover) {
    .submitBtn:hover{background-color: rgb(4, 191, 191);}
@@ -221,11 +216,11 @@ input{
 }
 
 @media (hover: none) {
-  .submitBtn:hover {color: inherit;}
-  .restart:hover {color: inherit;}
-  .score-btn:hover {color: inherit;}
-  .start-btn:hover {color: inherit;}
-  .abtn:hover { color: inherit;}
+  .submitBtn:hover {background-color: inherit;}
+  .restart:hover {background-color: inherit;}
+  .score-btn:hover {background-color: inherit;}
+  .start-btn:hover {background-color: inherit;}
+  .abtn:hover {background-color: inherit;}
 }
 
 @media (min-width:780px){
