@@ -214,4 +214,8 @@ input{
 
 }
 
+@media (hover: none) {
+    a:hover { color: inherit; }
+}
+
 
