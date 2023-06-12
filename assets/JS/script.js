@@ -28,6 +28,7 @@ const initialsElement = document.getElementById('initials')
 const submitElement = document.querySelector('.submitBtn')
 const scoreboardElement = document.getElementById('scoreboard')
 let currentQuestionIndex = 0;
+const wrongSeconds = 2;
 let score = 0;
 resultsElement.textContent = score;
 var timeLeft = 60;
@@ -69,6 +70,7 @@ answer1Element.addEventListener('click', () => {
     correctElement.classList.remove('hide');
   }else{
     wrongElement.classList.remove('hide');
+    timeLeft -= wrongSeconds;
   }
   currentQuestionIndex++
   if (currentQuestionIndex === questions.length){
@@ -84,6 +86,7 @@ answer2Element.addEventListener('click', () => {
     correctElement.classList.remove('hide');
   }else{
     wrongElement.classList.remove('hide');
+    timeLeft -= wrongSeconds;
   }
   currentQuestionIndex++
   if (currentQuestionIndex === questions.length){
@@ -99,6 +102,7 @@ answer3Element.addEventListener('click', () => {
     correctElement.classList.remove('hide');
   }else{
     wrongElement.classList.remove('hide');
+    timeLeft -= wrongSeconds;
   }
   currentQuestionIndex++
   if (currentQuestionIndex === questions.length){
@@ -114,6 +118,7 @@ answer4Element.addEventListener('click', () => {
     correctElement.classList.remove('hide');
   }else{
     wrongElement.classList.remove('hide');
+    timeLeft -= wrongSeconds;
   }
   currentQuestionIndex++
   if (currentQuestionIndex === questions.length){
