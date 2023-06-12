@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Slab:wght@300&display=swap');
+
+
+.topContainer{
+  width: 100%;
+  background-image: url("../IMGS/Header2.png");
+  background-size: cover;
+  }
+
+#topTimer{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5vw;
+  text-align: center;
+  width: fit-content;
+  background-color: rgb(0, 0, 0);
+  color: aqua;
+  border-radius: 20px;
+  padding: 10px;
+  border-style: solid;
+  border-color: aqua;
+  border-width: 2px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainTitle{
+  font-size: 48px;
+  text-align: center;
+  color: aqua;
+  text-shadow: 1px 1px 5px black ;
+  background-color: rgb(10, 10, 10, .3);
+}
+
+#sub-title{
+  text-align: center;
+  font-size: 16px;
+  color: aqua;
+  text-shadow: 1px 1px 5px black ;
+  background-color: rgb(10, 10, 10, .2);
+  padding: 5px;
+}
+
+#highScores{
+  float: left;
+  margin-left: 20px;
+}
+
+.quizContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-image: url("../IMGS/Static.png");
+  border: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px;
+  margin-top: 5px;
+  color: aqua;
+
+}
+
+.resultsContainer {
+  flex-direction: column;
+  background-image: url("../IMGS/Static.png");
+  border-radius: 5px;
+  padding: 50px;
+  margin-top: 5px;
+  color: aqua;
+  box-shadow: 0 0 10px 2px;
+}
+
+
+
+.scoreboardContainer{
+  background-size:cover;
+  border-radius: 5px;
+  padding: 20px;
+  color: aqua;
+  background-image: url("../IMGS/Static.png");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px;
+  margin-top: 5px;
+  
+ 
+}
+
+
+#scoreboard{
+  padding-inline-start: 30px;
+  color: rgb(225, 239, 65);
+  background-color: black;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+
+}
+
+
+
+body {
+font-family: 'Orbitron', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+text-align: center;
+background-color: rgb(2, 2, 2);
+}
+
+.contp{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 3vw;
+  padding: 10px;
+
+}
+
+.status{
+  color: aqua;
+  font-size: 4vw;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-grid {
+  display:flex;
+  flex-direction: column;
+  grid-template-columns: max-content;
+  margin: 5px 0;
+}
+
+
+.abtn{
+  border-radius: 10px;
+  margin: 5px;
+  background-color: aqua;
+  font-size: 3vw;
+  font-family: 'Orbitron', sans-serif;
+  width: fit-content;
+}
+.abtn:hover{
+  background-color: rgb(4, 191, 191);
+}
+.start-btn{
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: 'Orbitron', sans-serif;
+  margin: 5px;
+}
+.start-btn:hover{
+  background-color: rgb(4, 191, 191);
+}
+
+.score-btn{
+  background-color: rgb(2, 164, 2);
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: 'Orbitron', sans-serif;
+  margin: 5px;
+}
+
+.score-btn:hover{
+  background-color: rgb(2, 114, 2);
+}
+.restart{
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgb(2, 164, 2);
+  border-radius: 5px;
+  width: fit-content;
+  justify-content: center;
+  font-size: 3vw;
+  box-shadow: 1px 5px 5px rgb(164, 163, 163);
+}
+.restart:hover{
+  background-color: rgb(2, 114, 2);
+}
+
+.submitBtn{
+  font-family: 'Orbitron', sans-serif;
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: 3vw;
+}
+.submitBtn:hover{
+  background-color: rgb(4, 191, 191);
+}
+input{
+  font-size: 3vw;
+
+}
+
+
