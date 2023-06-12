@@ -160,10 +160,11 @@ background-color: rgb(2, 2, 2);
 .abtn:hover{
   background-color: rgb(4, 191, 191);
 }
+
 .start-btn{
   background-color: aqua;
-  border-radius: 5px;
-  font-size: 5vw;
+  border-radius: 6px;
+  font-size: 6vw;
   font-family: 'Orbitron', sans-serif;
   margin: 5px;
   box-shadow: 0 0 10px 2px;
