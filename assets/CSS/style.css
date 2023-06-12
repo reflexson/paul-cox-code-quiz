@@ -216,11 +216,11 @@ input{
 }
 
 @media (hover: none) {
-  .submitBtn:hover {background-color: inherit;}
-  .restart:hover {background-color: inherit;}
-  .score-btn:hover {background-color: inherit;}
-  .start-btn:hover {background-color: inherit;}
-  .abtn:hover {background-color: inherit;}
+  .submitBtn:hover {background-color: aqua;}
+  .restart:hover {background-color: rgb(2, 164, 2);}
+  .score-btn:hover {background-color: rgb(2, 164, 2);}
+  .start-btn:hover {background-color: aqua;}
+  .abtn:hover {background-color: aqua;}
 }
 
 @media (min-width:780px){
