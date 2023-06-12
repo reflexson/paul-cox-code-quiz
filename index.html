@@ -8,38 +8,45 @@
     <link rel="stylesheet" href="./assets/CSS/style.css" />
   </head>
   <body>
-    <header class="topContainer">
-      <div id="highScores"> View High Scores</div>
+      <header class="topContainer">
+        <h1 id="mainTitle">Coding Quiz</h1>
+        <h2 id="sub-title">Test your coding knowledge! You will have 60 seconds to complete 10 questions.</h2>
+      </header>
       <div id="topTimer">Timer</div>
-      <h1 id="mainTitle">Coding Quiz</h1>
-    </header>
-    <div class="quizContainer" id="quizid">
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-          <button id="ans1" class="btn">Answer 1</button>
-          <button class="btn" id="ans2">Answer 2</button>
-          <button class="btn" id="ans3">Answer 3</button>
-          <button class="btn" id="ans4">Answer 4</button>
-        </div>
-        <div id="answerStatus">
-          <p id="correct" class="hide">Correct!</p>
-          <p id="wrong" class="hide">Wrong!</p>
-        </div>
-      </div>
-      <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-      </div>
+      <main class="main">
+      
+          <div class="quizContainer" id="quizid">
+             <div id="question-container" class="hide">
+              <div class="contp" id="question">Question</div>
+               <div id="answer-buttons" class="btn-grid">
+                 <button id="ans1" class="abtn">Answer 1</button>
+                 <button class="abtn" id="ans2">Answer 2</button>
+                 <button class="abtn" id="ans3">Answer 3</button>
+                 <button class="abtn" id="ans4">Answer 4</button>
+                 </div>
+              </div>
+              <div class="controls">
+                 <button id="start-btn" class="start-btn">Start</button>
+                 <button id="hs-btn" class="score-btn">View High Scores</button>
+           </div>
+    </div>
+    <div id="answerStatus">
+      <p id="correct" class="hide status">Correct!</p>
+      <p id="wrong" class="hide status">Wrong!</p>
     </div>
     <div id = "resultsid" class = "resultsContainer hide">
-      <p>Congrats!!! You scored a <span id="results"></span> out of 10 questions!</p>
-      <h2>Add Your Initials and Save your Score</h2>
-      <input id="initials"></input>
+      <p class="contp">Congrats!!! You scored a <span id="results"></span> out of 10 questions!<br>
+        Add your initials and save your score.<br>Become an Imortal!</p>
+      <input placeholder="Initials" id="initials"></input>
       <button class="submitBtn">Submit</button>
+      <button class="restart">Restart</button>
     </div>
-    <div class = "scoreboardContainer">
+    <div class = "scoreboardContainer hide" id="hsContainer">
+      <h3 class= "contp"id="hs-title">High Scores</h3>
       <ol id="scoreboard"></ol>
+      <button class="restart">Restart</button>
     </div>
+  </main>
     <script src="./assets/JS/script.js"></script>
   </body>
 </html>
