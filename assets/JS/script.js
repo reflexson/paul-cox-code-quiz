@@ -26,6 +26,7 @@ const resultsContainerElement = document.getElementById('resultsid')
 const hsContainerElement = document.getElementById('hsContainer')
 const initialsElement = document.getElementById('initials')
 const submitElement = document.querySelector('.submitBtn')
+const scoreboardElement = document.getElementById('scoreboard')
 let currentQuestionIndex = 0;
 let score = 0;
 resultsElement.textContent = score;
@@ -173,13 +174,15 @@ function showResults(){
 
 
 function saveScore(){
+  
   let scoreArray = JSON.parse(localStorage.getItem("userScore")) || []
   let newScore = {
     finalScore: score,
     userName: initialsElement.value,
   }
 scoreArray.push(newScore);
-localStorage.setItem("userScore", JSON.stringify(scoreArray))
+localStorage.setItem("userScore", JSON.stringify(scoreArray));
+
 
 }
 
@@ -192,9 +195,12 @@ function displayScores(){
   scoreArray.forEach(element => {
     const listItem = document.createElement("li");
     listItem.textContent = element.userName + '-' + element.finalScore + '/10';
-    const scoreboardElement = document.getElementById('scoreboard');
+    // const scoreboardElement = document.getElementById('scoreboard');
     scoreboardElement.append(listItem)
   });
+  if (scoreArray.length === 0){
+    scoreboardElement.classList.add('hide');
+  }
 
 }
 displayScores();
