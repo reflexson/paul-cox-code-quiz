@@ -7,6 +7,7 @@
 
 const startButton = document.getElementById('start-btn')
 const hsButton = document.getElementById('hs-btn')
+const ejectElement = document.getElementById('eject')
 const restartButton = document.getElementsByClassName('restart')
 const timerElement = document.getElementById('topTimer')
 const questionContainerElement = document.getElementById('question-container')
@@ -142,6 +143,7 @@ function startGame() {
   startButton.classList.add('hide');
   hsButton.classList.add('hide');
   questionContainerElement.classList.remove('hide');
+  ejectElement.classList.remove('hide');
   showQuestion();
 }
 
@@ -161,6 +163,7 @@ function loadResults(){
 }
 
 function showResults(){
+  ejectElement.classList.add('hide');
   answerStatusElement.classList.add('hide');
   timerElement.textContent = "Timer";
   resultsElement.textContent = score;
