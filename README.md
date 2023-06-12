@@ -22,6 +22,6 @@ https://github.com/reflexson/paul-cox-code-quiz
 
 simply navigate to the website or source code to interact with this project.
 
-Here is a gif that shows the functionality of the site
+Here is a gif that shows the functionality of the site(it takes a second to load)
 
 ![alt text](./assets/IMGS/Code%20Quiz.gif)
