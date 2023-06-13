@@ -6,7 +6,7 @@ This project is aan online quiz to test coding knowledge. It is a web applicatio
 
 
 This project helped me solidify Javascript concepts that we have covered in class.  Setting variables, generating functions, using objects, making arrays, adding event listeners, and commiting/retrieving data from local storage are a few of the concepts incorporated into this project. I also used media queries to ensure that the site looks as intended on a variety of devices. 
-I used this project to test the limits of what I can accomplish with CSS.  I was ambitious with by styling to produce a product I am proud of. I learned a lot about how to properly organize a webpage so that other developers and users can easily view, navigate, add to, or edit this site. I also was able to learn and practice git procedures for pushing, pulling, branching, adding files, committing, creating pull requests, and merging branches through github. 
+I used this project to test the limits of what I can accomplish with CSS.  I was ambitious with my styling to produce a product I am proud of. I learned a lot about how to properly organize a webpage so that other developers and users can easily view, navigate, add to, or edit this site. I also was able to learn and practice git procedures for pushing, pulling, branching, adding files, committing, creating pull requests, and merging branches through github. 
 
 ## Installation
 
