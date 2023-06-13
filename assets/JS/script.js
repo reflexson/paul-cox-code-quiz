@@ -1,8 +1,4 @@
-
-
-
-
-    
+  
 // Variables
 
 const startButton = document.getElementById('start-btn')
@@ -47,13 +43,6 @@ hsButton.addEventListener('click', () =>{
   hsContainerElement.classList.remove('hide');
 } )
 
-
-for(var i = 0; i < restartButton.length; i++) {
-  restartButton[i].addEventListener('click', function(){
- window.location.reload(); 
-}, false);
-}
-
 submitElement.addEventListener('click', () => {
   if (initialsElement.value.length == 0) {
     alert('Please enter your initials');
@@ -62,7 +51,6 @@ submitElement.addEventListener('click', () => {
   window.location.reload();
   }
 })
-
 
 answer1Element.addEventListener('click', () => {
   if(questions[currentQuestionIndex].correct === "a"){
@@ -128,7 +116,13 @@ answer4Element.addEventListener('click', () => {
   }
 })
 
+// multiple restart buttons
 
+for(var i = 0; i < restartButton.length; i++) {
+  restartButton[i].addEventListener('click', function(){
+ window.location.reload(); 
+}, false);
+}
 
 // Functions
 
@@ -177,9 +171,7 @@ function showResults(){
   resultsContainerElement.classList.remove('hide');
 }
 
-
 function saveScore(){
-  
   let scoreArray = JSON.parse(localStorage.getItem("userScore")) || []
   let newScore = {
     finalScore: score,
@@ -187,10 +179,7 @@ function saveScore(){
   }
 scoreArray.push(newScore);
 localStorage.setItem("userScore", JSON.stringify(scoreArray));
-
-
 }
-
 
 function displayScores(){
   let scoreArray = JSON.parse(localStorage.getItem("userScore")) || []
@@ -200,14 +189,13 @@ function displayScores(){
   scoreArray.forEach(element => {
     const listItem = document.createElement("li");
     listItem.textContent = element.userName + '-' + element.finalScore + '/10';
-    // const scoreboardElement = document.getElementById('scoreboard');
     scoreboardElement.append(listItem)
   });
   if (scoreArray.length === 0){
     scoreboardElement.classList.add('hide');
   }
-
 }
+
 displayScores();
 
 
@@ -294,6 +282,5 @@ const questions = [
     answer4: "D - please be over",
     correct: "a" 
   }
-
 ]
 
