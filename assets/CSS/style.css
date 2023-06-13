@@ -218,10 +218,10 @@ input{
 
 @media (min-width:1025px){
     .contp{
-      font-size: 2vw;
+      font-size: 1.5vw;
     }
     .abtn{
-      font-size: 1.75vw;
+      font-size: 1.5vw;
     }
     .restart{
       font-size: 2vw;
